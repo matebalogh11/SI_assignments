@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LookupCollections", "Lookup
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenericCollections", "GenericCollections\GenericCollections.csproj", "{E27DA00E-8982-4290-9A76-9B43D21ED55A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SearchPattern", "SearchPattern\SearchPattern.csproj", "{78135620-191B-4B41-B63D-901C94A7F992}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{E27DA00E-8982-4290-9A76-9B43D21ED55A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E27DA00E-8982-4290-9A76-9B43D21ED55A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E27DA00E-8982-4290-9A76-9B43D21ED55A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{78135620-191B-4B41-B63D-901C94A7F992}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78135620-191B-4B41-B63D-901C94A7F992}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78135620-191B-4B41-B63D-901C94A7F992}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78135620-191B-4B41-B63D-901C94A7F992}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
