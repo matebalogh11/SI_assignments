@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenericCollections", "Gener
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SearchPattern", "SearchPattern\SearchPattern.csproj", "{78135620-191B-4B41-B63D-901C94A7F992}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IsolatedStorageDemo", "IsolatedStorageDemo\IsolatedStorageDemo.csproj", "{2E63A0E2-1DB1-437B-BABD-15FC4F8D711D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{78135620-191B-4B41-B63D-901C94A7F992}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{78135620-191B-4B41-B63D-901C94A7F992}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{78135620-191B-4B41-B63D-901C94A7F992}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E63A0E2-1DB1-437B-BABD-15FC4F8D711D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E63A0E2-1DB1-437B-BABD-15FC4F8D711D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E63A0E2-1DB1-437B-BABD-15FC4F8D711D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E63A0E2-1DB1-437B-BABD-15FC4F8D711D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
