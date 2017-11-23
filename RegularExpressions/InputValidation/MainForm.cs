@@ -13,9 +13,16 @@ namespace InputValidation
 
         private void SaveButton_Click(object sender, EventArgs e)
         {
-            if (Logic.checkName(txtName.Text)) MessageBox.Show("The name is invalid only alphabetical characters are allowed!");
-            if (Logic.checkPhone(txtPhone.Text)) MessageBox.Show("Not valid US phone number!");
-            if (Logic.checkEmail(txtEmail.Text)) MessageBox.Show("The e-mail address is not valid.");
+            if (!Logic.CheckName(txtName.Text)) MessageBox.Show("The name is invalid only alphabetical characters are allowed!");
+            if (!Logic.CheckPhone(txtPhone.Text))
+            {
+                MessageBox.Show("Not valid US phone number!");
+            }
+            else
+            {
+                txtPhone.Text = Logic.ReformatPhone(txtPhone.Text);
+            }
+            if (!Logic.CheckEmail(txtEmail.Text)) MessageBox.Show("The e-mail address is not valid.");
         }
     }
 }
