@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2005
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InputValidation", "InputValidation.csproj", "{E4F1416F-B7EA-4715-A9BB-2F29BADB36C0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RegexTest", "..\RegexTest\RegexTest.csproj", "{C488D0B0-E462-4CA1-A96B-3AA45FF77BF1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E4F1416F-B7EA-4715-A9BB-2F29BADB36C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E4F1416F-B7EA-4715-A9BB-2F29BADB36C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E4F1416F-B7EA-4715-A9BB-2F29BADB36C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E4F1416F-B7EA-4715-A9BB-2F29BADB36C0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C488D0B0-E462-4CA1-A96B-3AA45FF77BF1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C488D0B0-E462-4CA1-A96B-3AA45FF77BF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C488D0B0-E462-4CA1-A96B-3AA45FF77BF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C488D0B0-E462-4CA1-A96B-3AA45FF77BF1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D00070FF-AB0F-463E-9123-DBF999D17ECA}
+	EndGlobalSection
+EndGlobal
