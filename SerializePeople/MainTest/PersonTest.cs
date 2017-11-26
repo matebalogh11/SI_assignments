@@ -28,7 +28,7 @@ namespace MainTest
         {
             Person testPerson = new Person("Adam Test", new DateTime(1983, 11, 3), Genders.MALE);
             string testString = testPerson.ToString();
-            string properString = "Name: Adam Test, Birth date: 1983 11 03, Gender: MALE";
+            string properString = "Name: Adam Test, Birth date: 1983 11 03, Gender: MALE, Age: 34";
             Assert.AreEqual(properString, testString);
         }
 
