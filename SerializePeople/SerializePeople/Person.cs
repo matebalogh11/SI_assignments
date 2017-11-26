@@ -19,13 +19,12 @@ namespace SerializePeople
             this.Gender = Gender;
         }
 
+        public Person() { }
+
         public static void Main(string[] args)
         {
 
             Person person = new Person("Julie Smith", new DateTime(1983, 11, 3), Genders.FEMALE);
-            Person testPerson = new Person("Adam Test", new DateTime(1983, 11, 3), Genders.MALE);
-            Console.WriteLine(testPerson.ToString().Equals("Name: Adam Test, Birth date: 1983 11 03, Gender: MALE"));
-
             Employee worker = new Employee("Joe Fahey", new DateTime(1965, 2, 15), Genders.MALE, 1500, "plumber");
             worker.Room = new Room(13);
 
@@ -52,6 +51,17 @@ namespace SerializePeople
                 {
                     Console.WriteLine("Serialization error!");
                 }
+            }
+        }
+
+        public static Person Deserialize(string input)
+        {
+            Person person = new Person();
+            using (FileStream stream = new FileStream(input, FileMode.Open))
+            {
+                BinaryFormatter formatter = new BinaryFormatter();
+                person = formatter.Deserialize(stream) as Person;
+                return person;
             }
         }
 

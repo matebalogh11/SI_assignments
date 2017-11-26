@@ -38,6 +38,8 @@ namespace MainTest
             if (File.Exists("test.txt")) File.Delete("test.txt");
             Person testPerson = new Person("Adam Test", new DateTime(1983, 11, 3), Genders.MALE);
             testPerson.Serialize("test.txt");
+            Person result = Person.Deserialize("test.txt");
+            Assert.AreEqual(testPerson.ToString(), result.ToString());
         }
     }
 }
