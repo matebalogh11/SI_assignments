@@ -7,13 +7,13 @@ namespace InstrumentationEx1
     {
         static void Main(string[] args)
         {
-            if (!EventLog.SourceExists("Demo", "DESKTOP-27ATJO4"))
+            if (!EventLog.SourceExists("Demo", "."))
             {
                 EventSourceCreationData eventData = new EventSourceCreationData("Demo", "Application");
-                eventData.MachineName = "DESKTOP-27ATJO4";
+                eventData.MachineName = ".";
                 EventLog.CreateEventSource(eventData);
             }
-            EventLog logDemo = new EventLog("Demo", "Application", "DESKTOP-27ATJO4");
+            EventLog logDemo = new EventLog("Application", ".", "Demo");
             logDemo.WriteEntry("Event written to application log", EventLogEntryType.Information, 234, Convert.ToInt16(3));
         }
     }
