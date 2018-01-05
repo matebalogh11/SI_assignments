@@ -1,5 +1,4 @@
-﻿using DerivativesCalculatorService;
-using System;
+﻿using System;
 
 namespace Client
 {
@@ -7,9 +6,15 @@ namespace Client
     {
         static void Main(string[] args)
         {
-            Calculator client = new Calculator();
-            var result = client.CalculateDerivative(30, new string[] { "symbol" }, new string[] { "function" });
-            Console.WriteLine($"Derivative was calculated: {result}");
+            Console.WriteLine("Press any key when the service is ready!");
+            Console.ReadKey();
+
+            DerivativesCalculatorClient proxy = new DerivativesCalculatorClient("DerivativesCalculatorConfiguration");
+            decimal result = proxy.CalculateDerivative(3, new string[] { "Codecool" }, new string[] { });
+            Console.WriteLine($"Result: {result}");
+
+            Console.WriteLine("Press any key to exit.");
+            Console.ReadKey();
         }
     }
 }
