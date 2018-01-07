@@ -14,7 +14,7 @@ namespace QuicksortWPF
         public MainForm()
         {
             InitializeComponent();
-            PopulateList("Old", this.oldList);
+            PopulateList("Sortable List", this.oldList);
         }
 
         public void PopulateList(string listType, ListView currentList)
@@ -32,7 +32,7 @@ namespace QuicksortWPF
         private void Start(object sender, RoutedEventArgs e)
         {
             SortEngine.QuickSort(testArray);
-            PopulateList("New", this.newList);
+            PopulateList("Result", this.newList);
         }
     }
 }
