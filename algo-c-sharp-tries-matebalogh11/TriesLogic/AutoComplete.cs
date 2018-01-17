@@ -106,8 +106,41 @@ namespace TriesLogic
         /// <returns>true if the removal was successful</returns>
         public bool RemoveWord(String wordToRemove)
         {
-            // TODO -- Optional homework
+            char[] letters = wordToRemove.ToCharArray();
+            return findWord(rootNode, letters, 0);
+        }
+
+        bool findWord(TrieDataNode node, char[] word, int index)
+        {
+            if (word.Length == index)
+            {
+                if (!node.isCompleted) return false;
+                removeWord(node);
+                return true;
+            }
+            if (node.children.ContainsKey(Char.ToLower(word[index]))
+                || node.children.ContainsKey(Char.ToUpper(word[index])))
+            {
+                TrieDataNode foundNode;
+                node.children.TryGetValue(Char.ToLower(word[index]), out foundNode);
+                if (foundNode == null) foundNode = node.children[Char.ToUpper(word[index])];
+                return findWord(foundNode, word, ++index);
+            }
             return false;
+        }
+
+        void removeWord(TrieDataNode node)
+        {
+            if (node.root) return;
+            if (node.children.Keys.Count > 0)
+            {
+                node.isCompleted = false;
+                return;
+            } else
+            {
+                node.parent.children.Remove(node.Data);
+                removeWord(node.parent);
+            }
         }
     }
 }

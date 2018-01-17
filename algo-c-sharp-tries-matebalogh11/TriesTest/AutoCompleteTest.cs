@@ -90,7 +90,7 @@ namespace TriesTest
             AutoComplete ac = new AutoComplete();
             ac.AddWord("aReallyLongWord");
 
-            Assert.IsTrue(ac.RemoveWord("LongWord"));
+            Assert.IsFalse(ac.RemoveWord("LongWord"));
             Assert.AreEqual(1, ac.GetCompletions("aReallyLongWord").Count());
         }
     }
