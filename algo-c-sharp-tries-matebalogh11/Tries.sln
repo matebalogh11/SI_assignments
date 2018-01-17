@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2010
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TriesLogic", "TriesLogic\TriesLogic.csproj", "{E5513CA9-67C1-471D-B10C-F5CE1E425367}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TriesDemo", "TriesDemo\TriesDemo.csproj", "{98FD4B12-EC8A-49D7-AB33-7182C97E7628}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TriesTest", "TriesTest\TriesTest.csproj", "{AF1E9781-8A45-4BD3-A6D6-C8BEE57A9FBD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E5513CA9-67C1-471D-B10C-F5CE1E425367}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E5513CA9-67C1-471D-B10C-F5CE1E425367}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E5513CA9-67C1-471D-B10C-F5CE1E425367}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E5513CA9-67C1-471D-B10C-F5CE1E425367}.Release|Any CPU.Build.0 = Release|Any CPU
+		{98FD4B12-EC8A-49D7-AB33-7182C97E7628}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98FD4B12-EC8A-49D7-AB33-7182C97E7628}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98FD4B12-EC8A-49D7-AB33-7182C97E7628}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98FD4B12-EC8A-49D7-AB33-7182C97E7628}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF1E9781-8A45-4BD3-A6D6-C8BEE57A9FBD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF1E9781-8A45-4BD3-A6D6-C8BEE57A9FBD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF1E9781-8A45-4BD3-A6D6-C8BEE57A9FBD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF1E9781-8A45-4BD3-A6D6-C8BEE57A9FBD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8A9CA205-330C-430B-BF7B-A674CF516043}
+	EndGlobalSection
+EndGlobal
