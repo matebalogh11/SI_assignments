@@ -66,9 +66,12 @@ namespace TriesLogic
                 findLastLetter(node, words);
                 return;
             }
-            if (node.children.ContainsKey(word[index]))
+            if (node.children.ContainsKey(Char.ToLower(word[index]))
+                || node.children.ContainsKey(Char.ToUpper(word[index])))
             {
-                TrieDataNode foundNode = node.children[word[index]];
+                TrieDataNode foundNode;
+                node.children.TryGetValue(Char.ToLower(word[index]), out foundNode);
+                if (foundNode == null) foundNode = node.children[Char.ToUpper(word[index])];
                 getWords(foundNode, word, ++index, words);
             }
         }
